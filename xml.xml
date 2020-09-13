@@ -1,0 +1,279 @@
+<!-- Message Logbook -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<transaction xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:type="xsd:Object">  
+  <transactionNum xsi:type="xsd:long">25</transactionNum>  
+  <operations xsi:type="xsd:List"> 
+    <elem xsi:type="xsd:Object"> 
+      <criteria xsi:type="xsd:Object"> 
+        <operator>and</operator>  
+        <_constructor>AdvancedCriteria</_constructor>  
+        <criteria xsi:type="xsd:List"> 
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>TSBEGIN</fieldName>  
+            <operator>greaterOrEqual</operator>  
+            <value xsi:type="xsd:datetime">2020-08-18T16:00:00.000</value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>TSBEGIN</fieldName>  
+            <operator>lessOrEqual</operator>  
+            <value xsi:type="xsd:datetime">2020-08-28T15:59:00.000</value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>TEXT</fieldName>  
+            <operator>iContainsPattern</operator>  
+            <value>invalid</value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>MESSAGEGROUP</fieldName>  
+            <operator>inSet</operator>  
+            <value xsi:type="xsd:List"> 
+              <elem>FM</elem> 
+            </value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>PLC</fieldName>  
+            <operator>inSet</operator>  
+            <value xsi:type="xsd:List"> 
+              <elem>LF2911</elem>  
+              <elem>LF3912</elem> 
+            </value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>FUNCTIONGROUP</fieldName>  
+            <operator>iContainsPattern</operator>  
+            <value>RB320</value> 
+          </elem> 
+        </criteria> 
+      </criteria>  
+      <operationConfig xsi:type="xsd:Object"> 
+        <dataSource>alarm_all</dataSource>  
+        <repo xsi:nil="true"/>  
+        <operationType>fetch</operationType>  
+        <textMatchStyle>substring</textMatchStyle> 
+      </operationConfig>  
+      <startRow xsi:type="xsd:long">0</startRow>  
+      <endRow xsi:type="xsd:long">75</endRow>  
+      <sortBy xsi:type="xsd:List"> 
+        <elem>-TSBEGIN</elem> 
+      </sortBy>  
+      <componentId>ALARM_HISTORY_ListGrid</componentId>  
+      <appID>builtinApplication</appID>  
+      <operation>ref:alarm_all_fetch</operation>  
+      <oldValues xsi:type="xsd:Object"> 
+        <operator>and</operator>  
+        <_constructor>AdvancedCriteria</_constructor>  
+        <criteria xsi:type="xsd:List"> 
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>TSBEGIN</fieldName>  
+            <operator>greaterOrEqual</operator>  
+            <value xsi:type="xsd:datetime">2020-08-18T16:00:00.000</value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>TSBEGIN</fieldName>  
+            <operator>lessOrEqual</operator>  
+            <value xsi:type="xsd:datetime">2020-08-28T15:59:00.000</value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>TEXT</fieldName>  
+            <operator>iContainsPattern</operator>  
+            <value>invalid</value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>MESSAGEGROUP</fieldName>  
+            <operator>inSet</operator>  
+            <value xsi:type="xsd:List"> 
+              <elem>FM</elem> 
+            </value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>PLC</fieldName>  
+            <operator>inSet</operator>  
+            <value xsi:type="xsd:List"> 
+              <elem>LF2911</elem>  
+              <elem>LF3912</elem> 
+            </value> 
+          </elem>  
+          <elem xsi:type="xsd:Object"> 
+            <fieldName>FUNCTIONGROUP</fieldName>  
+            <operator>iContainsPattern</operator>  
+            <value>RB320</value> 
+          </elem> 
+        </criteria> 
+      </oldValues> 
+    </elem> 
+  </operations> 
+</transaction>
+
+
+
+<!-- Body Tracking -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<transaction xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:type="xsd:Object">
+  <transactionNum xsi:type="xsd:long">9</transactionNum>
+  <operations xsi:type="xsd:List">
+    <elem xsi:type="xsd:Object">
+      <criteria xsi:type="xsd:Object">
+        <operator>and</operator>
+        <_constructor>AdvancedCriteria</_constructor>
+        <criteria xsi:type="xsd:List">
+          <elem xsi:type="xsd:Object">
+            <fieldName>CREATED</fieldName>
+            <operator>greaterOrEqual</operator>
+            <value xsi:type="xsd:datetime">2020-09-08T02:00:00.000</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>CREATED</fieldName>
+            <operator>lessOrEqual</operator>
+            <value xsi:type="xsd:datetime">2020-09-12T15:59:00.000</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>BODY_EXTID</fieldName>
+            <operator>iContainsPattern</operator>
+            <value>782020*</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>PLCIN</fieldName>
+            <operator>inSet</operator>
+            <value xsi:type="xsd:List">
+              <elem>112010</elem>
+              <elem>112360</elem>
+              <elem>112400</elem>
+              <elem>125001</elem>
+            </value>
+          </elem>
+        </criteria>
+      </criteria>
+      <operationConfig xsi:type="xsd:Object">
+        <dataSource>bts_history</dataSource>
+        <repo xsi:nil="true"/>
+        <operationType>fetch</operationType>
+        <textMatchStyle>exact</textMatchStyle>
+      </operationConfig>
+      <startRow xsi:type="xsd:long">0</startRow>
+      <endRow xsi:type="xsd:long">75</endRow>
+      <sortBy xsi:type="xsd:List">
+        <elem>-CREATED</elem>
+      </sortBy>
+      <componentId>AMF_BTS_HISTORY_ListGrid</componentId>
+      <appID>builtinApplication</appID>
+      <operation>ref:bts_history_fetch</operation>
+      <oldValues xsi:type="xsd:Object">
+        <operator>and</operator>
+        <_constructor>AdvancedCriteria</_constructor>
+        <criteria xsi:type="xsd:List">
+          <elem xsi:type="xsd:Object">
+            <fieldName>CREATED</fieldName>
+            <operator>greaterOrEqual</operator>
+            <value xsi:type="xsd:datetime">2020-09-08T02:00:00.000</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>CREATED</fieldName>
+            <operator>lessOrEqual</operator>
+            <value xsi:type="xsd:datetime">2020-09-12T15:59:00.000</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>BODY_EXTID</fieldName>
+            <operator>iContainsPattern</operator>
+            <value>782020*</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>PLCIN</fieldName>
+            <operator>inSet</operator>
+            <value xsi:type="xsd:List">
+              <elem>112010</elem>
+              <elem>112360</elem>
+              <elem>112400</elem>
+              <elem>125001</elem>
+            </value>
+          </elem>
+        </criteria>
+      </oldValues>
+    </elem>
+  </operations>
+</transaction>
+
+
+
+<!-- Paint Log -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<transaction xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:type="xsd:Object">
+  <transactionNum xsi:type="xsd:long">25</transactionNum>
+  <operations xsi:type="xsd:List">
+    <elem xsi:type="xsd:Object">
+      <criteria xsi:type="xsd:Object">
+        <operator>and</operator>
+        <_constructor>AdvancedCriteria</_constructor>
+        <criteria xsi:type="xsd:List">
+          <elem xsi:type="xsd:Object">
+            <fieldName>BODY_EXTID</fieldName>
+            <operator>iContainsPattern</operator>
+            <value>78202093616224</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>MDS_CURRENT_LOCATION_TEXT</fieldName>
+            <operator>inSet</operator>
+            <value xsi:type="xsd:List">
+              <elem>Handover to E-Shuttle PT - type check</elem>
+              <elem>Message point processing result ED</elem>
+            </value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>CREATED</fieldName>
+            <operator>greaterOrEqual</operator>
+            <value xsi:type="xsd:datetime">2020-08-24T16:00:00.000</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>CREATED</fieldName>
+            <operator>lessOrEqual</operator>
+            <value xsi:type="xsd:datetime">2020-09-08T15:59:00.000</value>
+          </elem>
+        </criteria>
+      </criteria>
+      <operationConfig xsi:type="xsd:Object">
+        <dataSource>amf_bts_paint_log_book</dataSource>
+        <repo xsi:nil="true"/>
+        <operationType>fetch</operationType>
+        <textMatchStyle>exact</textMatchStyle>
+      </operationConfig>
+      <startRow xsi:type="xsd:long">0</startRow>
+      <endRow xsi:type="xsd:long">75</endRow>
+      <sortBy xsi:type="xsd:List">
+        <elem>CREATED</elem>
+      </sortBy>
+      <appID>builtinApplication</appID>
+      <operation>amf_bts_paint_log_book_fetch</operation>
+      <oldValues xsi:type="xsd:Object">
+        <operator>and</operator>
+        <_constructor>AdvancedCriteria</_constructor>
+        <criteria xsi:type="xsd:List">
+          <elem xsi:type="xsd:Object">
+            <fieldName>BODY_EXTID</fieldName>
+            <operator>iContainsPattern</operator>
+            <value>78202093616224</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>MDS_CURRENT_LOCATION_TEXT</fieldName>
+            <operator>inSet</operator>
+            <value xsi:type="xsd:List">
+              <elem>Handover to E-Shuttle PT - type check</elem>
+              <elem>Message point processing result ED</elem>
+            </value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>CREATED</fieldName>
+            <operator>greaterOrEqual</operator>
+            <value xsi:type="xsd:datetime">2020-08-24T16:00:00.000</value>
+          </elem>
+          <elem xsi:type="xsd:Object">
+            <fieldName>CREATED</fieldName>
+            <operator>lessOrEqual</operator>
+            <value xsi:type="xsd:datetime">2020-09-08T15:59:00.000</value>
+          </elem>
+        </criteria>
+      </oldValues>
+    </elem>
+  </operations>
+</transaction>
