@@ -7,7 +7,7 @@ import html
 import urllib
 
 #EMES
-cookie='JSESSIONID=p6qrrcgvRwoX2J_N5AI1WWkD6AP9y-oGtuPGwQup.svw-c2sn02001; isc_cState=ready; EMES_SSO=NTRhZWI5ZTktNGFkYS00Y2U4LTkxN2EtMzc2ZDA0MGE0NzBl'
+cookie='JSESSIONID=iuo0I3nKR-R5Sy42xkMTmEjT0W_Kxi0RWDJ2TYf7.svw-c2sn02001; isc_cState=ready; EMES_SSO=ZGJkMWM4N2EtNDYxNS00ODgxLThkYTgtYzFlZjFhMTM2NTVl'
 message_logbook_url = "http://172.30.1.95/webgui.alarm.war/EMES/sc/IDACall?isc_rpc=1&isc_v=v9.1p_2015-02-24&isc_xhr=1"
 formdata_msglog="isc_tnum=25&_transaction=%3Ctransaction%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2F10%2FXMLSchema-instance%22%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CtransactionNum%20xsi%3Atype%3D%22xsd%3Along%22%3E25%3C%2FtransactionNum%3E%3Coperations%20xsi%3Atype%3D%22xsd%3AList%22%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3Ccriteria%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3Coperator%3Eand%3C%2Foperator%3E%3C_constructor%3EAdvancedCriteria%3C%2F_constructor%3E%3Ccriteria%20xsi%3Atype%3D%22xsd%3AList%22%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3ETSBEGIN%3C%2FfieldName%3E%3Coperator%3EgreaterOrEqual%3C%2Foperator%3E%3Cvalue%20xsi%3Atype%3D%22xsd%3Adatetime%22%3E2020-08-18T16%3A00%3A00.000%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3ETSBEGIN%3C%2FfieldName%3E%3Coperator%3ElessOrEqual%3C%2Foperator%3E%3Cvalue%20xsi%3Atype%3D%22xsd%3Adatetime%22%3E2020-08-28T15%3A59%3A00.000%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3ETEXT%3C%2FfieldName%3E%3Coperator%3EiContainsPattern%3C%2Foperator%3E%3Cvalue%3Einvalid%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3EMESSAGEGROUP%3C%2FfieldName%3E%3Coperator%3EinSet%3C%2Foperator%3E%3Cvalue%20xsi%3Atype%3D%22xsd%3AList%22%3E%3Celem%3EFM%3C%2Felem%3E%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3EPLC%3C%2FfieldName%3E%3Coperator%3EinSet%3C%2Foperator%3E%3Cvalue%20xsi%3Atype%3D%22xsd%3AList%22%3E%3Celem%3ELF2911%3C%2Felem%3E%3Celem%3ELF3912%3C%2Felem%3E%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3EFUNCTIONGROUP%3C%2FfieldName%3E%3Coperator%3EiContainsPattern%3C%2Foperator%3E%3Cvalue%3ERB320%3C%2Fvalue%3E%3C%2Felem%3E%3C%2Fcriteria%3E%3C%2Fcriteria%3E%3CoperationConfig%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CdataSource%3Ealarm_all%3C%2FdataSource%3E%3Crepo%20xsi%3Anil%3D%22true%22%2F%3E%3CoperationType%3Efetch%3C%2FoperationType%3E%3CtextMatchStyle%3Esubstring%3C%2FtextMatchStyle%3E%3C%2FoperationConfig%3E%3CstartRow%20xsi%3Atype%3D%22xsd%3Along%22%3E0%3C%2FstartRow%3E%3CendRow%20xsi%3Atype%3D%22xsd%3Along%22%3E75%3C%2FendRow%3E%3CsortBy%20xsi%3Atype%3D%22xsd%3AList%22%3E%3Celem%3E-TSBEGIN%3C%2Felem%3E%3C%2FsortBy%3E%3CcomponentId%3EALARM_HISTORY_ListGrid%3C%2FcomponentId%3E%3CappID%3EbuiltinApplication%3C%2FappID%3E%3Coperation%3Eref%3Aalarm_all_fetch%3C%2Foperation%3E%3ColdValues%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3Coperator%3Eand%3C%2Foperator%3E%3C_constructor%3EAdvancedCriteria%3C%2F_constructor%3E%3Ccriteria%20xsi%3Atype%3D%22xsd%3AList%22%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3ETSBEGIN%3C%2FfieldName%3E%3Coperator%3EgreaterOrEqual%3C%2Foperator%3E%3Cvalue%20xsi%3Atype%3D%22xsd%3Adatetime%22%3E2020-08-18T16%3A00%3A00.000%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3ETSBEGIN%3C%2FfieldName%3E%3Coperator%3ElessOrEqual%3C%2Foperator%3E%3Cvalue%20xsi%3Atype%3D%22xsd%3Adatetime%22%3E2020-08-28T15%3A59%3A00.000%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3ETEXT%3C%2FfieldName%3E%3Coperator%3EiContainsPattern%3C%2Foperator%3E%3Cvalue%3Einvalid%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3EMESSAGEGROUP%3C%2FfieldName%3E%3Coperator%3EinSet%3C%2Foperator%3E%3Cvalue%20xsi%3Atype%3D%22xsd%3AList%22%3E%3Celem%3EFM%3C%2Felem%3E%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3EPLC%3C%2FfieldName%3E%3Coperator%3EinSet%3C%2Foperator%3E%3Cvalue%20xsi%3Atype%3D%22xsd%3AList%22%3E%3Celem%3ELF2911%3C%2Felem%3E%3Celem%3ELF3912%3C%2Felem%3E%3C%2Fvalue%3E%3C%2Felem%3E%3Celem%20xsi%3Atype%3D%22xsd%3AObject%22%3E%3CfieldName%3EFUNCTIONGROUP%3C%2FfieldName%3E%3Coperator%3EiContainsPattern%3C%2Foperator%3E%3Cvalue%3ERB320%3C%2Fvalue%3E%3C%2Felem%3E%3C%2Fcriteria%3E%3C%2FoldValues%3E%3C%2Felem%3E%3C%2Foperations%3E%3C%2Ftransaction%3E&protocolVersion=1.0"
 
@@ -34,7 +34,7 @@ def Getdata(url,formdata):
     requestdata= formdata
     cookies=coo_regular(cookie)
     print(cookies)
-    res=requests.post(url,headers=headers,cookies=cookies,data=requestdata) #,params={'search_text':'python','cat':'1001'} 
+    res=requests.post(url,headers=headers,cookies=cookies,data=requestdata)  
     return res
 def formdata_clean(formdata):
     requestJSONdata=formdata
@@ -56,6 +56,49 @@ def str_to_xml(s):#url to xml
 def xml_to_str(xml):
 #     print(type(xml.encode(encoding = "utf-8")))
     return xml.encode(encoding = "utf-8")
+def time_parse(timestamp):
+    """解决8小时时区偏差及字符串时间转换"""
+    return (datetime.datetime.strptime(timestamp,"%Y-%m-%dT%H:%M:%S.000") 
+    - datetime.timedelta(hours=8)).strftime("%Y-%m-%dT%H:%M:%S.000")
+def modify_text_params(txt,dic,para = "text"):
+    """
+    对于text/Functiongroup之类的post参数修改
+    txt:要修改参数的值
+    para:表示哪个参数，text,FunctionGroup等
+    """
+    if txt:
+        dic[para]['value']=txt
+    else:
+        del dic[para]
+    return dic
+def modify_date_params(date_time,dic,para = "begin_start"):
+    """
+    对于Date之类的post参数修改
+    date_time:要修改参数的值
+    para:表示哪个参数，Start,End等
+    """
+    if date_time:
+        # 解决8小时时区偏差
+        date_time = time_parse(date_time)
+        dic[para]['value']['#text']=date_time
+    else:
+        del dic[para]
+    return dic
+def modify_list_params(PLC,dic,para = "PLC"):
+    """
+    对于Date之类的post参数修改
+    date_time:要修改参数的值
+    para:表示哪个参数，text,FunctionGroup等
+    """
+    if PLC:
+        if len(PLC)>=2:
+            dic[para]['value']['elem']=PLC
+        else:
+            dic[para]['value']=PLC
+    else:
+        del dic[para]
+    return dic
+
 def parse(res):
     """解析返回数据"""
     def date(val):
@@ -74,8 +117,7 @@ def crawl_rest(data):#还需要完善优化
     if len(data[0]['data']) < data[0]['totalRows']:#为爬取所有
         for i in range(1,data[0]['totalRows'] // 75):
             start_end_rows = [str(i*75),str((i+1)*75)]
-        
-            
+        return start_end_rows
 
 # Message logbook模块
 def modify_messagelog_params(transaction,begin_start=None,begin_end=None,text=None,PLC=None,FunctionGroup=None,start_end_rows=[]):
@@ -83,50 +125,32 @@ def modify_messagelog_params(transaction,begin_start=None,begin_end=None,text=No
     dic={}
     for k,v in zip(["begin_start","begin_end","text","MESSAGEGROUP","PLC","FunctionGroup"],a):
         dic[k] = v
-    del dic["MESSAGEGROUP"]    
+    # del dic["MESSAGEGROUP"]    
     try:
-        if begin_start:
-            # 解决8小时时区偏差
-            begin_start = (datetime.datetime.strptime(begin_start,"%Y-%m-%dT%H:%M:%S.000")- datetime.timedelta(hours=8)).strftime("%Y-%m-%dT%H:%M:%S.000")
-            dic["begin_start"]['value']['#text']=begin_start
-        else:
-            del dic["begin_start"]
-        if begin_end:
-            begin_end = (datetime.datetime.strptime(begin_end,"%Y-%m-%dT%H:%M:%S.000")- datetime.timedelta(hours=8)).strftime("%Y-%m-%dT%H:%M:%S.000")
-            dic["begin_end"]['value']['#text']=begin_end
-        else:
-            del dic["begin_end"]
-        if text:
-            dic["text"]['value']=text
-        else:
-            del dic["text"]
-        if PLC:
-            if len(PLC)>=2:
-                dic["PLC"]['value']['elem']=PLC
-            else:
-                dic["PLC"]['value']=PLC
-        else:
-            del dic["PLC"]
-        if FunctionGroup:
-            dic["FunctionGroup"]['value']=FunctionGroup
-        else:
-            del dic["FunctionGroup"]
+        dic = modify_date_params(begin_start,dic,para = "begin_start")
+        dic = modify_date_params(begin_end,dic,para = "begin_end")
+        dic = modify_text_params(text,dic,para="text")
+        dic = modify_list_params(PLC,dic,para = "PLC")
+        dic = modify_text_params(FunctionGroup,dic,para = "FunctionGroup")
+
         transaction['transaction']['operations']["elem"]["criteria"]["criteria"]["elem"]=list(dic.values())
+        transaction['transaction']['operations']["elem"]["oldValues"]["criteria"]["elem"]=list(dic.values())#修改oldValues
         if start_end_rows:
             transaction['transaction']['operations']["elem"]['startRow']["#text"] = start_end_rows[0]
-            transaction['transaction']['operations']["elem"]['startRow']["#text"] = start_end_rows[1]
+            transaction['transaction']['operations']["elem"]['endRow']["#text"] = start_end_rows[1]
     except:
         print("Parameters not found, modify fail!")
     return xml_to_str(dict_to_xml(transaction))  
 def message_logbook_crawl():
     begin_start='2020-08-08T00:00:00.000'
     begin_end='2020-08-21T23:59:00.000'
-    text = 'invalid free'
+    text = 'invalid'
     PLC = ["LF2911","LF3912"]#可根据需要添加
     FunctionGroup = "RB320"#只能写1个
 
     transaction = xml_to_dict(str_to_xml(formdata_msglog.split("&")[1]).split("=",1)[1])
-    data = modify_messagelog_params(transaction,begin_start=begin_start,begin_end=begin_end,text=text,PLC=None,FunctionGroup=None,start_end_rows=['75','150'])#根据参数需求调用
+    data = modify_messagelog_params(transaction,begin_start=begin_start,begin_end=begin_end,
+                                    text=text,PLC=None,FunctionGroup=None,start_end_rows=['0','2000'])#根据参数需求调用,start_end_rows=['75','150']
     form_data={
         'isc_tnum': 25,#好像这个值无所谓
         '_transaction': data,
@@ -135,6 +159,7 @@ def message_logbook_crawl():
     res=Getdata(message_logbook_url,form_data)
     data = parse(res)
     # print(data)
+
 
 # Body tracking模块
 def get_bodytracking_info_byPIN(transaction,PIN=None):
@@ -152,33 +177,17 @@ def modify_bodytracking_params(transaction,Date_begin=None,Date_end=None,PIN=Non
     for k,v in zip(["Date_begin","Date_end","PIN","Location"],a):
         b[k]=v
     try:
-        if Date_begin and a[0]["fieldName"]== 'CREATED' and a[0]["operator"]== 'greaterOrEqual':
-            Date_begin = (datetime.datetime.strptime(Date_begin,"%Y-%m-%dT%H:%M:%S.000")- datetime.timedelta(hours=8)).strftime("%Y-%m-%dT%H:%M:%S.000")
-            b["Date_begin"]['value']['#text']=Date_begin
-        else:
-            del b["Date_begin"]
-        if Date_end and a[1]["fieldName"]== 'CREATED' and a[1]["operator"]== 'lessOrEqual':
-            Date_begin = (datetime.datetime.strptime(Date_end,"%Y-%m-%dT%H:%M:%S.000")- datetime.timedelta(hours=8)).strftime("%Y-%m-%dT%H:%M:%S.000")
-            b["Date_end"]['value']['#text']=Date_end
-        else:
-            del b["Date_end"]
-        if PIN and a[2]["fieldName"]== 'BODY_EXTID' and a[2]["operator"]== 'iContainsPattern':
-            b["PIN"]['value']=PIN
-        else:
-            del b["PIN"]
-        if Location and a[3]["fieldName"]== 'PLCIN' and a[3]["operator"]== 'inSet':
-            if len(Location) >=2:
-                a[3]['value']['elem']=Location
-            else:
-                a[3]['value']=Location
-        else:
-            del b["Location"]
+        b = modify_date_params(Date_begin,b,para = "Date_begin")
+        b = modify_date_params(Date_end,b,para = "Date_end")
+        b = modify_text_params(PIN,b,para="PIN")
+        b = modify_list_params(Location,b,para = "Location")
+
         transaction['transaction']['operations']["elem"]["criteria"]["criteria"]["elem"]=list(b.values())    
     except:
         print("Parameters not found, modify fail!")
     return xml_to_str(dict_to_xml(transaction))
 def body_tracking_crawl():
-    date_begin = '2020-09-08T00:00:00.000'
+    date_begin = '2020-09-07T00:00:00.000'
     date_end = '2020-09-08T23:59:00.000'
     PIN = "78202093616224"#78202092811897
     Location = ['112360', "112010"]#可以是1个或多个
@@ -214,25 +223,10 @@ def modify_paintlog_params(transaction,PIN=None,Location=None,Start=None,End=Non
     for k,v in zip(["PIN","Location","Start","End"],a):
         b[k]=v
     try:
-        if PIN and a[0]["fieldName"]== 'BODY_EXTID' and a[0]["operator"]== 'iContainsPattern':
-            b["PIN"]['value']=PIN
-        else:
-            del b["PIN"]
-        if Location and a[1]["fieldName"]== 'MDS_CURRENT_LOCATION_TEXT' and a[1]["operator"]== 'inSet':
-            if len(Location)==1:
-                b["Location"]['value']=Location
-            else:
-                b["Location"]['value']['elem']=Location
-        else:
-            del b["Location"]
-        if Start:
-            b["Start"]['value']['#text']=Start
-        else:
-            del b["Start"]
-        if End:
-            b["End"]['value']['#text']=End
-        else:
-            del b["End"]
+        b = modify_text_params(PIN,b,para="PIN")
+        b = modify_list_params(Location,b,para = "Location")
+        b = modify_date_params(Start,b,para = "Start")
+        b = modify_date_params(End,b,para = "End")
         transaction['transaction']['operations']["elem"]["criteria"]["criteria"]["elem"]=list(b.values())
     except:
         print("Parameters not found, modify fail!")
